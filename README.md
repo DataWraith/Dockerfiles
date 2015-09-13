@@ -1,6 +1,6 @@
 # Dockerfiles
 
-This repository contains my Dockerfiles (duh).
+This repository contains my [Dockerfiles](https://docs.docker.com/reference/builder/).
 
 * `mozjpeg`
 
