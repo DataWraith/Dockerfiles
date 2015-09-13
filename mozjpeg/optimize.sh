@@ -14,5 +14,5 @@ TMPFILE=$(mktemp)
 DIR=$(dirname "$CANONICAL")
 BASE=$(basename "$CANONICAL")
 
-docker run -v "$DIR":/images datawraith/mozjpeg -copy none -arithmetic "$BASE" > $TMPFILE \
+docker run --rm -v "$DIR":/images datawraith/mozjpeg -copy none -arithmetic "$BASE" > $TMPFILE \
   && mv -f "$TMPFILE" "$1"
