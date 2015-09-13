@@ -22,4 +22,8 @@ RUN autoreconf -fiv \
  && ./configure \
  && make install prefix=/usr/local libdir=/usr/local/lib64
 
-CMD ["jpegtran"]
+# Create a working directory
+RUN mkdir /images
+WORKDIR /images
+
+ENTRYPOINT ["jpegtran"]
