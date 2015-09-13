@@ -1,6 +1,11 @@
 FROM alpine
 MAINTAINER Johannes Holzfuß <DataWraith@fastmail.fm>
 
+# This Dockerfile is meant for losslessly optimizing JPEG images.
+#
+# Example usage:
+#     docker run -v "$(pwd)":/images datawraith/mozjpeg -copy none -arithmetic Image.jpg > Image-opt.jpg
+
 RUN apk --update add \
 	autoconf \
 	automake \
