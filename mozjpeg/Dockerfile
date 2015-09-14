@@ -4,7 +4,7 @@ MAINTAINER Johannes Holzfuß <DataWraith@fastmail.fm>
 # This Dockerfile is meant for losslessly optimizing JPEG images.
 #
 # Example usage:
-#     docker run -v "$(pwd)":/images datawraith/mozjpeg -copy none -arithmetic Image.jpg > Image-opt.jpg
+#     docker run -v "$(pwd)":/images datawraith/mozjpeg jpegtran -copy none -arithmetic Image.jpg > Image-opt.jpg
 
 RUN apk --update add \
 	autoconf \
@@ -25,5 +25,3 @@ RUN autoreconf -fiv \
 # Create a working directory
 RUN mkdir /images
 WORKDIR /images
-
-ENTRYPOINT ["jpegtran"]
