@@ -8,7 +8,7 @@ This repository contains my [Dockerfiles](https://docs.docker.com/reference/buil
     It contains several useful commandline programs such as `cjpeg` (makes JPEG
     files) and `jpegtran` (can losslessly transform/optimize JPEG files).
 
-# Other cool Dockerfiles
+## Other cool Dockerfiles
 
 * [sameersbn/browser-box](https://github.com/sameersbn/docker-browser-box)
 
