@@ -2,21 +2,6 @@
 
 This repository contains my [Dockerfiles](https://docs.docker.com/reference/builder/).
 
-The intent of the repository is to eventually replace the traditional package
-manager of the host system with docker, so that I can use every program in a
-container. That's why this repository contains some trivial Dockerfiles (such
-as `p7zip`).
-
-* `mozjpeg`
-
-    Builds a container containing [mozjpeg](https://github.com/mozilla/mozjpeg).
-    It contains several useful commandline programs such as `cjpeg` (makes JPEG
-    files) and `jpegtran` (can losslessly transform/optimize JPEG files).
-
-* `p7zip`
-
-    Builds a container containing [p7zip](http://p7zip.sourceforge.net/).
-
 ## Other cool Dockerfiles
 
 * [sameersbn/browser-box](https://github.com/sameersbn/docker-browser-box)
