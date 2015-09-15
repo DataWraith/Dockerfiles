@@ -14,7 +14,8 @@ RUN apk --update add \
 	build-base \
 	git \
 	libtool \
-	nasm
+	nasm \
+ && rm -rf /var/cache/apk/*
 
 RUN git clone git://github.com/mozilla/mozjpeg.git /source
 

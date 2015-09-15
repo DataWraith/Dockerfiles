@@ -10,7 +10,8 @@ MAINTAINER Johannes Holzfuß <DataWraith@fastmail.fm>
 #     docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd)":/data datawraith/p7zip a archive.7z file1 file2 file3
 
 RUN apk --update add \
-	p7zip
+	p7zip \
+ && rm -rf /var/cache/apk/*
 
 RUN mkdir /data
 WORKDIR /data
