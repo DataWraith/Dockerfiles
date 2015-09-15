@@ -7,6 +7,13 @@ manager of the host system with docker, so that I can use every program in a
 container. That's why this repository contains some trivial Dockerfiles (such
 as `p7zip`).
 
+* `jbig2`
+
+    Builds a container for jbig2dec and jbig2enc. These commandline tools allow
+    you to work with [JBIG2](https://en.wikipedia.org/wiki/JBIG2)-compressed
+    bi-level images. Useful for turning scanned documents into crisp and very
+    small PDF files. I use it in conjunction with OCRmyPDF (see below).
+
 * `mozjpeg`
 
     Builds a container containing [mozjpeg](https://github.com/mozilla/mozjpeg).
