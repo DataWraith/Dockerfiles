@@ -1,9 +1,11 @@
 # mozjpeg
 
 This Dockerfile builds a container containing [mozjpeg](https://github.com/mozilla/mozjpeg),
-a replacement for `libjpeg-turbo`.
+a replacement for `libjpeg-turbo`. Since that library is usually installed,
+installing mozjpeg clashes with it, which is why I containerized it,
+sidestepping the problem.
 
-It contains several useful commandline programs such as `cjpeg` (makes JPEG
+mozjpeg has several useful commandline programs such as `cjpeg` (makes JPEG
 files) and `jpegtran` (can losslessly transform/optimize JPEG files).
 
 The accompanying script `optimize.sh` takes a single JPEG-file and optimizes
