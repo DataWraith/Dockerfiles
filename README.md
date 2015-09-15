@@ -29,6 +29,11 @@ as `p7zip`).
     and editing a git repository. Very convenient, and the docker image makes
     it simple to setup.
 
+* [jbarlow83/ocrmypdf](https://github.com/jbarlow83/OCRmyPDF)
+
+    A program with a lot of dependencies, packaged as a Docker container. It
+    performs Omnifont Character Recognition on PDF files.
+
 * [jess/pandoc](https://github.com/jfrazelle/dockerfiles/tree/master/pandoc)
 
     `pandoc` is a universal markup converter. I mostly use it to convert
