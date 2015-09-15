@@ -4,6 +4,9 @@ This repository contains my [Dockerfiles](https://docs.docker.com/reference/buil
 
 ## Other cool Dockerfiles
 
+If you're browsing this repository, you may be interested in other cool
+Dockerfiles as well:
+
 * [sameersbn/browser-box](https://github.com/sameersbn/docker-browser-box)
 
     Containerized Chrome/Chromium/Firefox/Tor-Browser
