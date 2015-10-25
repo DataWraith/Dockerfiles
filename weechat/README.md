@@ -2,7 +2,7 @@
 
 [Weechat] is a terminal IRC client.
 
-This image is meant to run on a server and used remotely using weechat's
+This image is meant to be run on a server and used remotely via weechat's
 relay protocol.
 
 ## Usage
