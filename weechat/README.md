@@ -9,17 +9,10 @@ relay protocol.
 
 `docker run -td --name weechat -e PASSWORD="hunter2" -p 9001:9001 datawraith/weechat`
 
-Then you can use [Glowing Bear] or another program supporting the encrypted
-weechat relay protocol to connect to the container using the password you
-specified.
-
-The container generates a self-signed certificate for encryption during the
-build process, as that was the easiest to setup, so you might want to build
-the Dockerfile yourself if you don't trust the provided certificate (which you
-shouldn't).
-
-Pull requests that change this are welcome, but I'm unlikely to change it
-myself, because (let's face it), nobody else is likely to use this.
+This will generate a new certificate, so it may take a little bit of time
+until the container boots up. After it has started, you can use [Glowing Bear]
+or another program supporting the encrypted weechat relay protocol to connect
+to the container using the password you specified.
 
 ## Example usage with bitlbee
 
