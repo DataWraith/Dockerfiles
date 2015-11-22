@@ -22,13 +22,10 @@ using Docker's `link` functionality:
 1. `docker run -d --name bitlbee kalbasit/bitlbee`
 2. `docker run -td --name weechat --link bitlbee -e PASSWORD="hunter2" -p 9001:9001 datawraith/weechat`
 
-Connect to Weechat and execute `/exec env` to get the environment variables
-defined by Docker's link feature. The address of the bitlbee server is given in
-the environment variable `BITLBEE_PORT_6667_TCP_ADDR`. You can use that address
-to login to the bitlbee server:
+Connect to Weechat and execute the following commands to connect to bitlbee:
 
-1. `/server add bitlbee <IP address>`
-2. `/connect bitlbee` 
+1. `/server add bitlbee bitlbee`
+2. `/connect bitlbee`
 
 [Weechat]: http://weechat.org
 [Glowing Bear]: http://www.glowing-bear.org
