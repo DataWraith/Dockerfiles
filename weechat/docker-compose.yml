@@ -1,0 +1,13 @@
+bitlbee:
+    image: kalbasit/bitlbee
+    expose:
+        - "6667"
+
+weechat:
+    build: .
+    environment:
+        PASSWORD: hunter2
+    ports:
+        - "9001:9001"
+    links:
+        - bitlbee
