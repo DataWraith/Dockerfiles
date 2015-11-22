@@ -5,6 +5,7 @@ bitlbee:
 
 weechat:
     build: .
+    tty: true
     environment:
         PASSWORD: hunter2
     ports:
