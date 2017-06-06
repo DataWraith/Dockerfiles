@@ -1,3 +1,5 @@
+**Status**: Abandoned. Use at your own risk.
+
 # Dockerfiles
 
 This repository contains my [Dockerfiles](https://docs.docker.com/reference/builder/).
